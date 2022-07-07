@@ -272,3 +272,20 @@ const slider = function () {
     }
   });
 }();
+
+
+
+//code chalenge
+const car = function (speed) {
+  this.speed = speed;
+}
+car.prototype.accelerate = function () {
+  return this.speed + 10;
+}
+car.prototype.brake = function () {
+  return this.speed - 5;
+}
+let num = 9154984569;
+const bmw = new car(120);
+const mercedes = new car(95);
+console.log(bmw.accelerate());
